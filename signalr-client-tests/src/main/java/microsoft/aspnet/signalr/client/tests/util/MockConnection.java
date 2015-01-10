@@ -139,6 +139,11 @@ public class MockConnection implements ConnectionBase {
     }
 
     @Override
+    public void setGson(Gson gson) {
+
+    }
+
+    @Override
     public JsonParser getJsonParser() {
         return new JsonParser();
     }
