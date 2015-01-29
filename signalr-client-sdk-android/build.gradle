@@ -4,7 +4,7 @@ apply plugin: 'com.jfrog.bintray'
 
 
 group = 'net.take'
-version = '1.0'
+version = '1.0.1'
 def gitHubUrl = 'https://github.com/takenet/java-client'
 
 android {
@@ -68,5 +68,10 @@ bintray {
         licenses = ['Apache-2.0']
         labels = ['android']
         publicDownloadNumbers = true
+        version {
+            name = '1.0.1' //Bintray logical version name
+            desc = 'web socket support'
+            vcsTag = '1.0.1'
+        }
     }
 }
